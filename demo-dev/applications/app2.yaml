@@ -1,4 +1,6 @@
+# noinspection KubernetesUnknownResourcesInspection
 apiVersion: argoproj.io/v1alpha1
+# noinspection KubernetesUnknownResourcesInspection
 kind: Application
 metadata:
   name: echo-server
@@ -8,8 +10,8 @@ spec:
     namespace: jd
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/Ealenn/charts'
-    targetRevision: master
+    repoURL: 'https://github.com/Ealenn/charts.git'
+    targetRevision: HEAD
     chart: echo-server
     version: 'latest'
   project: default

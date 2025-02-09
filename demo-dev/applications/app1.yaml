@@ -1,4 +1,6 @@
+# noinspection KubernetesUnknownResourcesInspection
 apiVersion: argoproj.io/v1alpha1
+# noinspection KubernetesUnknownResourcesInspection
 kind: Application
 metadata:
   name: prometheus-app1
@@ -8,8 +10,8 @@ spec:
     namespace: jd
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/prometheus-community/helm-charts'
-    targetRevision: main
+    repoURL: 'https://github.com/prometheus-community/helm-charts.git'
+    targetRevision: HEAD
     chart: 'kube-prometheus-stack'
     version: 'latest'
   project: default
