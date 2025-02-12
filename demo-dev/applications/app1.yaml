@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: 'https://github.com/prometheus-community/helm-charts.git'
     targetRevision: main
-    path: charts/kube-prometheus-stack
+    path: charts/jiralert
   destination:
     namespace: jd
     server: 'https://kubernetes.default.svc'
