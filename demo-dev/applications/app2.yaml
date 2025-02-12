@@ -6,14 +6,14 @@ metadata:
   name: echo-server
   namespace: argocd
 spec:
+  project: default
+  source:
+    repoURL: https://github.com/Ealenn/charts.git
+    path: charts/echo-server
+    targetRevision: master
   destination:
     namespace: jd
-    server: 'https://kubernetes.default.svc'
-  source:
-    repoURL: 'https://github.com/Ealenn/charts.git'
-    targetRevision: HEAD
-    chart: echo-server
-  project: default
+    name: in-cluster
   syncPolicy:
     automated:
       prune: true
