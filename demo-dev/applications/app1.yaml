@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/prometheus-community/helm-charts.git'
-    targetRevision: master
+    targetRevision: main
     path: charts/kube-prometheus-stack
   destination:
     namespace: jd
