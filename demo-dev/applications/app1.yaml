@@ -6,14 +6,14 @@ metadata:
   name: prometheus-app1
   namespace: argocd
 spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/prometheus-community/helm-charts.git'
+    targetRevision: master
+    path: charts/kube-prometheus-stack
   destination:
     namespace: jd
     server: 'https://kubernetes.default.svc'
-  source:
-    repoURL: 'https://github.com/prometheus-community/helm-charts.git'
-    targetRevision: HEAD
-    chart: 'kube-prometheus-stack'
-  project: default
   syncPolicy:
     automated:
       prune: true
