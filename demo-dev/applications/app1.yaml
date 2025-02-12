@@ -13,7 +13,6 @@ spec:
     repoURL: 'https://github.com/prometheus-community/helm-charts.git'
     targetRevision: HEAD
     chart: 'kube-prometheus-stack'
-    version: 'latest'
   project: default
   syncPolicy:
     automated:

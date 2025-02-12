@@ -13,7 +13,6 @@ spec:
     repoURL: 'https://github.com/Ealenn/charts.git'
     targetRevision: HEAD
     chart: echo-server
-    version: 'latest'
   project: default
   syncPolicy:
     automated:
