@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: 'https://github.com/prometheus-community/helm-charts.git'
     targetRevision: main
-    path: charts/jiralert
+    path: charts/prometheus-blackbox-exporter
   destination:
     namespace: jd
     server: 'https://kubernetes.default.svc'
